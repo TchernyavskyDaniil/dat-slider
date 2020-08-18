@@ -1,5 +1,5 @@
 {
-  "name": "loop slider",
+  "name": "loopslider",
   "version": "1.0.0",
   "description": "Kekloop",
   "main": "app.js",
@@ -87,6 +87,7 @@
   },
   "dependencies": {
     "autoprefixer": "9.8.6",
+    "babel-plugin-macros": "^2.8.0",
     "core-js": "3.6.5",
     "cssnano": "^4.1.10",
     "effector": "^21.2.2",
@@ -99,6 +100,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "reset-css": "5.0.1",
+    "reshadow": "0.0.1-alpha.78",
     "script-ext-html-webpack-plugin": "^2.1.4"
   },
   "husky": {
