@@ -4,6 +4,7 @@ import * as ReactDOM from 'react-dom';
 import { Main } from './pages/main';
 
 import 'reset-css';
+import './assets/fonts/fonts.pcss';
 
 if (process.env.LOCAL) {
   // eslint-disable-next-line global-require

@@ -1,5 +1,13 @@
 import React, { FC } from 'react';
 
-export const Main: FC = () => {
-  return <h1> hello </h1>;
-}
+import { Plan } from '../features/plan';
+import { Steps } from '../features/steps';
+
+import { Wrapper } from '../ui/slider/wrapper';
+
+export const Main: FC = () => (
+  <Wrapper>
+    <Steps />
+    <Plan />
+  </Wrapper>
+);
