@@ -1,10 +1,13 @@
+import 'reset-css';
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import { Main } from './pages/main';
 
-import 'reset-css';
 import './assets/fonts/fonts.pcss';
+
+import './poof.pcss';
 
 if (process.env.LOCAL) {
   // eslint-disable-next-line global-require

@@ -9,6 +9,7 @@ export const Wrapper: FC = ({ children }) =>
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding: 0 10%;
       box-sizing: border-box;
       background-image: url('frontassets/images/shapes.svg');
       background-repeat: no-repeat;

@@ -3,21 +3,23 @@ import { useList } from 'effector-react';
 
 import { useInterval } from '../../lib/useInterval';
 import { Step } from '../step';
-import { $steps, setupNextActiveStep } from './model/steps';
+import { nextStep } from './lib/next-step';
+import { $steps } from './model/steps';
 
 import { Wrapper } from '../../ui/steps/wrapper';
 
-const INTERVAL_TIMER = {
-  ms: 5000,
-};
+import { INTERVAL_TIMER } from '../../constants/time';
 
 export const Steps: FC = () => {
-  useInterval({ callback: setupNextActiveStep, ms: INTERVAL_TIMER.ms });
+  useInterval({
+    callback: nextStep,
+    ms: INTERVAL_TIMER,
+  });
 
   return (
     <Wrapper>
-      {useList($steps, ({ title, icon, isActive }) => (
-        <Step title={title} icon={icon} isActive={isActive} />
+      {useList($steps, ({ title, iconType, isActive }) => (
+        <Step title={title} iconType={iconType} isActive={isActive} />
       ))}
     </Wrapper>
   );

@@ -1,7 +1,9 @@
-import step from './capacity-step.svg';
 import { CAPACITY_PLAN } from './plan';
 
-export const CAPACITY = {
-  step,
+import { PlanImages } from '../../../features/plan/types';
+
+export const CAPACITY: {
+  plan: PlanImages;
+} = {
   plan: CAPACITY_PLAN,
 };

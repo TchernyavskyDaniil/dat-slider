@@ -1,7 +1,9 @@
 import { SCHEDULE_PLAN } from './plan';
-import step from './shedule-step.svg';
 
-export const SCHEDULE = {
-  step,
+import { PlanImages } from '../../../features/plan/types';
+
+export const SCHEDULE: {
+  plan: PlanImages;
+} = {
   plan: SCHEDULE_PLAN,
 };

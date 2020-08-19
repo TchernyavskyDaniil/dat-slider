@@ -3,11 +3,22 @@ import { createStore } from 'effector';
 import { INITIAL_STEP } from '../../step/initialStep';
 import { $currentStep } from '../../step/model/current-step';
 
-const { title, description } = INITIAL_STEP;
+import { PlanImages } from '../types';
 
-export const $currentPlan = createStore<{ title: string; description: string }>({
+const { title, description, previews } = INITIAL_STEP;
+
+export const $currentPlan = createStore<{
+  title: string;
+  description: string;
+  previews: PlanImages;
+}>({
   title,
   description,
+  previews,
 });
 
-$currentPlan.on($currentStep, (_, step) => step);
+$currentPlan.on($currentStep, (_, step) => ({
+  title: step.title,
+  description: step.description,
+  previews: step.previews,
+}));

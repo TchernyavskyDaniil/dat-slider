@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 
-import { Description } from '../../../ui/plan/description';
-import { Title } from '../../../ui/plan/title';
-import { Wrapper } from '../../../ui/plan/wrapper';
+import { Description } from '../../../ui/about-plan/description';
+import { Title } from '../../../ui/about-plan/title';
+import { Wrapper } from '../../../ui/about-plan/wrapper';
 
 export const About: FC<{ title: string; description: string }> = ({ title, description }) => (
   <Wrapper>

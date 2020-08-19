@@ -1,7 +1,9 @@
-import step from './communication-step.svg';
 import { COMMUNICATION_PLAN } from './plan';
 
-export const COMMUNICATION = {
-  step,
+import { PlanImages } from '../../../features/plan/types';
+
+export const COMMUNICATION: {
+  plan: PlanImages;
+} = {
   plan: COMMUNICATION_PLAN,
 };
