@@ -12,6 +12,8 @@ export const Picture: FC<{
     img {
       max-width: max-content;
       max-height: max-content;
+      min-height: 400px;
+      min-width: 400px;
     }
   `(
     <picture>
