@@ -75,6 +75,7 @@ module.exports = ({ folder, api }) =>
       new webpack.DefinePlugin({
         'process.env.PROD': JSON.stringify(api.PROD),
         'process.env.DEV': JSON.stringify(api.DEV),
+        'process.env.LOCAL': JSON.stringify(false),
       }),
     ],
   });

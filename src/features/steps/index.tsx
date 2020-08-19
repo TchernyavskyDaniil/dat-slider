@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useList } from 'effector-react';
 
-import { useInterval } from '../../lib/useInterval';
+import { useInterval } from '../../lib/use-interval';
 import { Step } from '../step';
 import { nextStep } from './lib/next-step';
 import { $steps } from './model/steps';
