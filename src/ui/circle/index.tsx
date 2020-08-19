@@ -5,8 +5,8 @@ export const Circle: FC = () =>
   styled`
     svg {
       position: absolute;
-      top: -31px;
-      right: -34px;
+      top: -1px;
+      right: -4px;
       transform: rotate(-90deg);
       stroke-dasharray: 251; /* (2PI * 40px) */
       stroke-dashoffset: 251;
@@ -19,7 +19,7 @@ export const Circle: FC = () =>
        }
     }
   `(
-    <svg width="90">
+    <svg width="90" height="90">
       <circle cx="43" cy="42" r="40" stroke="#F20D59" strokeWidth="4" fill="transparent" />
     </svg>,
   );
