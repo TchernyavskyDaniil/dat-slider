@@ -9,6 +9,6 @@ export const Wrapper: FC = ({ children }) =>
       align-items: center;
       justify-content: space-between;
       position: relative;
-      margin-bottom: 36px;
+      margin-bottom: 30px;
     }
 `(<div>{children}</div>);

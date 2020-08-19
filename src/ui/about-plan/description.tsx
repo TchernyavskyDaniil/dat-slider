@@ -7,7 +7,7 @@ export const Description: FC<{ text: string }> = ({ text }) =>
       max-height: 180px;
       font-family: Gotham Book, serif;
       font-size: 16px;
-      line-height: 18px;
+      line-height: 21px;
       color: #DBDBF0;
       margin-top: 15px;
       overflow: hidden;

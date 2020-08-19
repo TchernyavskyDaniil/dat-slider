@@ -5,5 +5,6 @@ export type Step = {
   description: string;
   iconType: string;
   previews: PlanImages;
+  dots: 'bottomLeft' | 'topRight';
   isActive: boolean;
 };

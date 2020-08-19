@@ -8,5 +8,6 @@ export const INITIAL_STEP = {
     'Set capacity limits and turn on alerts to limit access when the building reaches capacity. Ensure social distancing and avoid overcrowding.',
   iconType: ICONS.capacity,
   previews: IMAGES.capacity.plan,
+  dots: 'topRight',
   isActive: true,
 };
