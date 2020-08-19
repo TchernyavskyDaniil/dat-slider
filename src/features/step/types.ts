@@ -1,3 +1,4 @@
+import { DotsPosition } from '../dots-position/types';
 import { PlanImages } from '../plan/types';
 
 export type Step = {
@@ -5,6 +6,6 @@ export type Step = {
   description: string;
   iconType: string;
   previews: PlanImages;
-  dots: 'bottomLeft' | 'topRight';
+  dots: DotsPosition;
   isActive: boolean;
 };

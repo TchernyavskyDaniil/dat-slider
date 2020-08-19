@@ -1,7 +1,9 @@
 import React, { FC } from 'react';
 import styled from 'reshadow';
 
-export const Dots: FC<{ position: 'topRight' | 'bottomLeft' }> = ({ position }) =>
+import { DotsPosition } from '../../features/dots-position/types';
+
+export const Dots: FC<{ position: DotsPosition }> = ({ position }) =>
   styled`
     div {
       width: 142px;
