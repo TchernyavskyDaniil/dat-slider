@@ -1,11 +1,11 @@
 // DOMAIN FOR DEBUG
 
-import { createDomain as domain } from 'effector';
-import { attachLogger } from 'effector-logger/attach';
-
-export * from 'effector';
-const rootDomain = domain('root');
-
+// import { createDomain as domain } from 'effector';
+// import { attachLogger } from 'effector-logger/attach';
+//
+// export * from 'effector';
+// const rootDomain = domain('root');
+//
 // const states = {};
 // rootDomain.onCreateStore(store => {
 //   if (!store.sid) return;
@@ -34,12 +34,12 @@ const rootDomain = domain('root');
 //     states[store.sid].actual = value;
 //   });
 // });
-
-const createDomain = rootDomain.domain;
-const createEffect = rootDomain.effect;
-const createEvent = rootDomain.event;
-const createStore = rootDomain.store;
-
-attachLogger(rootDomain);
-
-export { createDomain, createEffect, createEvent, createStore, rootDomain as root };
+//
+// const createDomain = rootDomain.domain;
+// const createEffect = rootDomain.effect;
+// const createEvent = rootDomain.event;
+// const createStore = rootDomain.store;
+//
+// attachLogger(rootDomain);
+//
+// export { createDomain, createEffect, createEvent, createStore, rootDomain as root };
