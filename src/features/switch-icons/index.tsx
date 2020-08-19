@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC } from 'react';
+import React, { FC } from 'react';
 
 import { Capacity } from '../../ui/icons/capacity';
 import { Communication } from '../../ui/icons/communication';
@@ -8,11 +8,11 @@ import { Wrapper } from '../../ui/icons/wrapper';
 
 import { ICONS } from '../../constants/icons';
 
-export const SwitchIcons: FC<{ iconType: string; fill: string; wrapperStyles: CSSProperties }> = ({
-  iconType,
-  fill,
-  wrapperStyles,
-}) => {
+export const SwitchIcons: FC<{
+  iconType: string;
+  fill: string;
+  iconsRatio: 'active' | 'default';
+}> = ({ iconType, fill, iconsRatio }) => {
   let renderIcon = null;
   switch (iconType) {
     case ICONS.communication: {
@@ -40,5 +40,5 @@ export const SwitchIcons: FC<{ iconType: string; fill: string; wrapperStyles: CS
     }
   }
 
-  return <Wrapper wrapperStyles={wrapperStyles}>{renderIcon}</Wrapper>;
+  return <Wrapper iconsRatio={iconsRatio}>{renderIcon}</Wrapper>;
 };

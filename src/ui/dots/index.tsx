@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'reshadow';
 
-export const Dots: FC<{ top: string; right: string }> = ({ top, right }) =>
+export const Dots: FC<{ position: 'topRight' | 'bottomLeft' }> = ({ position }) =>
   styled`
     div {
       width: 142px;
@@ -13,4 +13,14 @@ export const Dots: FC<{ top: string; right: string }> = ({ top, right }) =>
       position: absolute;
       transform: translate(0,-40%);
     }
-`(<div style={{ top, right }} />);
+    
+    div[data-position=bottomLeft] {
+      right: 45%;
+      top: 75%;
+    }
+    
+    div[data-position=topRight] {
+      right: 14%;
+      top: 40%;
+    }
+`(<div data-position={position} />);

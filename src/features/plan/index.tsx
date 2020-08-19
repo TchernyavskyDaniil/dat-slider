@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useStore } from 'effector-react';
 
-import { $dotsCoords } from '../dots-coordinates/model/dots-coords';
+import { $dotsPosition } from '../dots-position/model/dots-position';
 import { About } from './about';
 import { $currentPlan } from './model/current-plan';
 
@@ -15,11 +15,11 @@ export const Plan: FC = () => {
     description,
     previews: { png, png2x, png3x, webp, webp2x, webp3x },
   } = useStore($currentPlan);
-  const { x, y } = useStore($dotsCoords);
+  const position = useStore($dotsPosition);
 
   return (
     <Wrapper>
-      <Dots top={y} right={x} />
+      <Dots position={position} />
       <About title={title} description={description} />
       <Picture
         webpSet={`${webp} 1x, ${webp2x} 2x, ${webp3x} 3x`}

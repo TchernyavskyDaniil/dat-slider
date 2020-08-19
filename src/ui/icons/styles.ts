@@ -16,4 +16,14 @@ export const styles = css`
     z-index: 2;
     padding: 6px;
   }
+
+  div[data-ratio='active'] {
+    background-color: white;
+    border: 3px solid transparent;
+  }
+
+  div[data-ratio='default'] {
+    background-color: transparent;
+    border: 3px solid #5c5c8a;
+  }
 `;

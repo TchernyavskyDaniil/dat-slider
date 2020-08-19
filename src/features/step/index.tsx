@@ -11,17 +11,18 @@ export const Step: FC<{ title: string; iconType: string; isActive: boolean }> = 
   title,
   iconType,
   isActive,
-}) => (
-  <Wrapper>
-    <Text text={title} />
-    <SwitchIcons
-      iconType={iconType}
-      fill={isActive ? '#F20D59' : 'white'}
-      wrapperStyles={{
-        backgroundColor: isActive ? 'white' : 'transparent',
-        border: isActive ? '3px solid transparent' : '3px solid #5c5c8a',
-      }}
-    />
-    <CircleWrapper>{isActive && <Circle />}</CircleWrapper>
-  </Wrapper>
-);
+}) => {
+  const iconsRatio = isActive ? 'active' : 'default';
+
+  return (
+    <Wrapper>
+      <Text text={title} />
+      <SwitchIcons
+        iconType={iconType}
+        fill={isActive ? '#F20D59' : 'white'}
+        iconsRatio={iconsRatio}
+      />
+      <CircleWrapper>{isActive && <Circle />}</CircleWrapper>
+    </Wrapper>
+  );
+};
