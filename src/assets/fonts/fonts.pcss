@@ -1,17 +1,22 @@
+/* На макетах - Инглиш, нужны будут другие языки, то рядом лежит основной шрифт,
+можно будет в префетч засунуть или собрать +1 шрифт для остальных юникодов */
+
 @font-face {
     font-family: 'Playfair Display';
     font-display: swap;
-    src: local('Playfair Display'), url('./playfair-display-black.woff2') format('woff2');
+    src: local('Playfair Display'), url('./playfair-display-black-en.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
+    unicode-range: U+0020-007F;
 }
 
 @font-face {
     font-family: 'Gotham Book';
     font-display: swap;
-    src: local('Gotham Book'), url('./gotham-book.woff2') format('woff2');
+    src: local('Gotham Book'), url('./gotham-book-en.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
+    unicode-range: U+0020-007F;
 }
 
 @font-face {

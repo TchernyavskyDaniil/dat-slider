@@ -1,3 +1,3 @@
-export const SLEEP_PAUSE = 400;
+export const SLEEP_PAUSE = 300;
 export const DEFAULT_SLEEP = 5000;
 export const INTERVAL_TIMER = DEFAULT_SLEEP + SLEEP_PAUSE;
