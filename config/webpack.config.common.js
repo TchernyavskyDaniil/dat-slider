@@ -22,7 +22,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|webp)$/i,
         use: ['file-loader?name=frontassets/images/[name].[ext]'],
       },
       {

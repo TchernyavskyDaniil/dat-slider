@@ -6,7 +6,7 @@ export const Wrapper: FC = ({ children }) =>
     div {
       display: flex;
       flex-direction: column;
-      width: 50%;
       margin-bottom: 45px;
+      padding: 0 18px;
     }
 `(<div>{children}</div>);

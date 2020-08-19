@@ -1,19 +1,20 @@
 import React, { FC } from 'react';
 
-import { Circle } from '../../ui/circle';
-import { CircleWrapper } from '../../ui/steps/step/circle-wrapper';
-import { Icon } from '../../ui/steps/step/icon';
-import { Text } from '../../ui/steps/step/text';
-import { Wrapper } from '../../ui/steps/step/wrapper';
+import { SwitchIcons } from '../switch-icons';
 
-export const Step: FC<{ text: string; icon: string; isActive: boolean }> = ({
-  text,
-  icon,
+import { Circle } from '../../ui/circle';
+import { CircleWrapper } from '../../ui/step/circle-wrapper';
+import { Text } from '../../ui/step/text';
+import { Wrapper } from '../../ui/step/wrapper';
+
+export const Step: FC<{ title: string; iconType: string; isActive: boolean }> = ({
+  title,
+  iconType,
   isActive,
 }) => (
   <Wrapper>
-    <Text text={text} />
-    <Icon icon={icon} text={text} />
+    <Text text={title} />
+    <SwitchIcons iconType={iconType} fill={isActive ? '#F20D59' : 'white'} />
     <CircleWrapper>{isActive && <Circle />}</CircleWrapper>
   </Wrapper>
 );
