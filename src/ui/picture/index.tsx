@@ -10,7 +10,6 @@ export const Picture: FC<{
 }> = ({ webpSet, pngSet, alt, src, srcSet }) =>
   styled`
     picture {
-      // Костыль похоже, изображение еще тянет в комплекте отступы
       margin-right: 30px;
     }
     img {
