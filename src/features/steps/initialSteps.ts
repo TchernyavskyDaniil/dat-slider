@@ -13,6 +13,7 @@ export const INITIAL_STEPS = [
       'the app.',
     iconType: ICONS.schedule,
     previews: IMAGES.schedule.plan,
+    dots: 'bottomLeft',
     isActive: false,
   },
   {
@@ -21,6 +22,7 @@ export const INITIAL_STEPS = [
       'Keep track of all your critical PPE inventory. Prioritize and track PPE allocation to highest at-risk employees.',
     iconType: ICONS.management,
     previews: IMAGES.management.plan,
+    dots: 'topRight',
     isActive: false,
   },
   {
@@ -30,6 +32,7 @@ export const INITIAL_STEPS = [
       'of emergency.',
     iconType: ICONS.communication,
     previews: IMAGES.communication.plan,
+    dots: 'bottomLeft',
     isActive: false,
   },
 ];
