@@ -1,8 +1,11 @@
+import { generateId } from '../../lib/id-generator';
+
 import { IMAGES } from '../../assets/images';
 
 import { ICONS } from '../../constants/icons';
 
 export const INITIAL_STEP = {
+  id: generateId(),
   title: 'Capacity planning',
   description:
     'Set capacity limits and turn on alerts to limit access when the building reaches capacity. Ensure social distancing and avoid overcrowding.',

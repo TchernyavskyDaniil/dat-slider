@@ -9,6 +9,9 @@ export const Picture: FC<{
   srcSet: string;
 }> = ({ webpSet, pngSet, alt, src, srcSet }) =>
   styled`
+    picture {
+      margin-right: 30px;
+    }
     img {
       max-width: max-content;
       max-height: max-content;

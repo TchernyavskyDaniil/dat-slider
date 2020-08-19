@@ -15,6 +15,7 @@ export const styles = css`
     position: absolute;
     z-index: 2;
     padding: 6px;
+    transition: 0.6s;
   }
 
   div[data-ratio='active'] {
@@ -23,7 +24,19 @@ export const styles = css`
   }
 
   div[data-ratio='default'] {
-    background-color: transparent;
     border: 3px solid #5c5c8a;
+    animation-name: activate-default;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes activate-default {
+    0% {
+      background-color: hsla(0, 0%, 100%, 0.1);
+    }
+
+    100% {
+      background-color: transparent;
+    }
   }
 `;

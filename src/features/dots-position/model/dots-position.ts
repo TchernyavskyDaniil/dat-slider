@@ -2,7 +2,7 @@ import { createStore } from 'effector';
 
 import { $currentStep } from '../../step/model/current-step';
 
-type DotsPosition = 'topRight' | 'bottomLeft';
+import { DotsPosition } from '../types';
 
 export const $dotsPosition = createStore<DotsPosition>('topRight');
 
