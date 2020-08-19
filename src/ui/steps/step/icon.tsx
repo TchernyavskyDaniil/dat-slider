@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'reshadow';
 
-export const Icon: FC<{ icon: string; text: string }> = ({ icon, text }) =>
+export const Icon: FC<{ icon: string; alt: string }> = ({ icon, alt }) =>
   styled`   
     div {
       width: 70px;
@@ -20,6 +20,6 @@ export const Icon: FC<{ icon: string; text: string }> = ({ icon, text }) =>
     }
 `(
     <div>
-      <img src={icon} alt={`icon by ${text}`} />
+      <img src={icon} alt={alt} />
     </div>,
   );

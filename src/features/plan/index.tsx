@@ -1,12 +1,15 @@
 import React, { FC } from 'react';
+import { useStore } from 'effector-react';
 
 import { About } from './about';
+import { $currentPlan } from './model/current-plan';
 
-export const Plan: FC = () => (
-  <>
-    <About
-      title="Capacity planning"
-      description="Set capacity limits and turn on alerts to limit access when the building reaches capacity. Ensure social distancing and avoid overcrowding."
-    />
-  </>
-);
+export const Plan: FC = () => {
+  const { title, description } = useStore($currentPlan);
+
+  return (
+    <>
+      <About title={title} description={description} />
+    </>
+  );
+};
