@@ -9,6 +9,10 @@ export const Picture: FC<{
   srcSet: string;
 }> = ({ webpSet, pngSet, alt, src, srcSet }) =>
   styled`
+    picture {
+      // Костыль похоже, изображение еще тянет в комплекте отступы
+      margin-right: 30px;
+    }
     img {
       max-width: max-content;
       max-height: max-content;
