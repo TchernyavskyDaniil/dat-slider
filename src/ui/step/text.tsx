@@ -8,7 +8,7 @@ export const Text: FC<{ text: string }> = ({ text }) =>
       max-height: 75px;
       font-size: 20px;
       line-height: 24px;
-      margin-right: 36px;
+      margin: 8px 36px 0 0; 
       text-align: right;
       color: white;
       overflow: hidden;

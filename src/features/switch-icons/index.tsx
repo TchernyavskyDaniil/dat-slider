@@ -1,32 +1,44 @@
-import React, { FC } from 'react';
+import React, { CSSProperties, FC } from 'react';
 
-import { Capacity } from '../../ui/steps/capacity';
-import { Communication } from '../../ui/steps/communication';
-import { Management } from '../../ui/steps/management';
-import { Schedule } from '../../ui/steps/schedule';
+import { Capacity } from '../../ui/icons/capacity';
+import { Communication } from '../../ui/icons/communication';
+import { Management } from '../../ui/icons/management';
+import { Schedule } from '../../ui/icons/schedule';
+import { Wrapper } from '../../ui/icons/wrapper';
 
 import { ICONS } from '../../constants/icons';
 
-export const SwitchIcons: FC<{ iconType: string; fill: string }> = ({ iconType, fill }) => {
+export const SwitchIcons: FC<{ iconType: string; fill: string; wrapperStyles: CSSProperties }> = ({
+  iconType,
+  fill,
+  wrapperStyles,
+}) => {
+  let renderIcon = null;
   switch (iconType) {
     case ICONS.communication: {
-      return <Communication fill={fill} />;
+      renderIcon = <Communication fill={fill} />;
+      break;
     }
 
     case ICONS.management: {
-      return <Management fill={fill} />;
+      renderIcon = <Management fill={fill} />;
+      break;
     }
 
     case ICONS.schedule: {
-      return <Schedule fill={fill} />;
+      renderIcon = <Schedule fill={fill} />;
+      break;
     }
 
     case ICONS.capacity: {
-      return <Capacity fill={fill} />;
+      renderIcon = <Capacity fill={fill} />;
+      break;
     }
 
     default: {
-      return null;
+      break;
     }
   }
+
+  return <Wrapper wrapperStyles={wrapperStyles}>{renderIcon}</Wrapper>;
 };

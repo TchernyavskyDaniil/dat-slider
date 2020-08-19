@@ -4,7 +4,7 @@ import styled from 'reshadow';
 export const CircleWrapper: FC = ({ children }) =>
   styled`
     div {
-      width: 76px;
+      width: 84px;
       height: 76px;
       position: relative;
     }
